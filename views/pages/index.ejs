@@ -1,24 +1,6 @@
-<% include ../partials/head %>
+<% include ../partials/head.ejs %>
+<% include ../partials/header.ejs  %>
 
-<body class="container">
+<% include ../partials/main.ejs %>
 
-<header>
-    <% include ../partials/header  %>
-</header>
-
-<main>
-    <div class="jumbotron">
-        <h1>This is great</h1>
-        <p>Welcome to templating using EJS</p>
-        <h2>Loop</h2>
-
-        <ul>
-            <% drinks.forEach(function(drink) { %>
-                <li><%= drink.name %> - <%= drink.drunkness %></li>
-            <% }); %>
-        </ul>
-        <p><%= tagline %></p>
-    </div>
-</main>
-
-<% include ../partials/footer %>
+<% include ../partials/footer.ejs %>
