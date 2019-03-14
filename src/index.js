@@ -11,15 +11,29 @@ app.get('/', function(req, res) {
 });
 
 app.get('/people', async (req, res) => {
-    // const peopleData = data.req(api.solveUrl('people'));
-    // const planetsData = data.req(api.solveUrl('planets'));
-    // const speciesData = data.req(api.solveUrl('species'));
-    // const starshipsData = data.req(api.solveUrl('starships'));
 
     const peopleData = await data.req(api.solveUrl('people'));
 
     res.render('pages/people', {
         peopleData: peopleData.results
+    });
+});
+
+app.get('/planets', async (req, res) => {
+
+    const planetsData = await data.req(api.solveUrl('planets'));
+
+    res.render('pages/planets', {
+        planetsData: planetsData.results
+    });
+});
+
+app.get('/species', async (req, res) => {
+
+    const speciesData = await data.req(api.solveUrl('species'));
+
+    res.render('pages/species', {
+        speciesData: speciesData.results
     });
 });
 
