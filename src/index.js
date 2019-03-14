@@ -14,6 +14,8 @@ app.get('/people', async (req, res) => {
 
     const peopleData = await data.req(api.solveUrl('people'));
 
+    // document.querySelector('.loader').style.display = 'flex';
+
     res.render('pages/people', {
         peopleData: peopleData.results
     });
@@ -34,6 +36,15 @@ app.get('/species', async (req, res) => {
 
     res.render('pages/species', {
         speciesData: speciesData.results
+    });
+});
+
+app.get('/starships', async (req, res) => {
+
+    const starshipsData = await data.req(api.solveUrl('starships'));
+
+    res.render('pages/starships', {
+        starshipsData: starshipsData.results
     });
 });
 

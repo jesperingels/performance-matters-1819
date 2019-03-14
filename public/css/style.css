@@ -1,4 +1,58 @@
+html,
 body {
     min-height: 100%;
-    box-sizing: border-box;
+    height: 100%;
+    background: #131313;
+    color: white;
 }
+
+article a, article a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.people {
+    background-image: url("/img/luke_skywalker.jpg");
+}
+
+.planets {
+    background-image: url("/img/mustafar.jpg");
+}
+
+.species {
+    background-image: url("/img/species.jpg");
+}
+
+.starships {
+    background-image: url("/img/millenium.png");
+}
+
+.cat {
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+    .cat div {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.loader {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #131313;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+    .loader img {
+        height: 300px;
+        width: auto;
+    }

@@ -1,20 +1,37 @@
 <article>
 
-    <main>
+    <main class="container">
 
-        <!--<p id="loader">Loading...</p>-->
-        <button id="back" style="display:none;">back</button>
+        <div class="row wrapper">
+            <a class="col-md cat people" href="/people">
+                <div>
+                    <h3 id="people">People</h3>
+                </div>
+            </a>
+            <a href="/planets" class="col-md cat planets">
+                <div>
+                    <h3 id="planets">Planets</h3>
+                </div>
+            </a>
+          <a href="/planets" class="col-md cat species">
+              <div>
+                  <h3 id="species">Species</h3>
+              </div>
+          </a>
+         <a href="/starships" class="col-md cat starships">
+             <div>
+                 <h3 id="starships">Starships</h3>
+             </div>
+         </a>
 
-
-        <div class="wrapper nav">
-            <h3 id="people"><a href="/people">People</a></h3>
-            <h3 id="planets"><a href="/planets">Planets</a></h3>
-            <h3 id="species"><a href="/species">Species</a></h3>
-            <h3 id="starships"><a href="/starships">Star-ships</a></h3>
         </div>
-
-        <section id="content"></section>
 
     </main>
 
 </article>
+
+<div class="loader">
+
+    <img src="/img/deathstar.png"/>
+
+</div>
