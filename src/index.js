@@ -6,7 +6,13 @@ const port = 3000;
 const fetch = require('node-fetch');
 
 
+
+
 app.set('view engine', 'ejs');
+
+app.use(compression());
+
+app.use(express.static('public'));
 
 app.get('/', function(req, res) {
     res.render('pages/index');
@@ -50,11 +56,8 @@ app.get('/starships', async (req, res) => {
     });
 });
 
-app.listen(port, () => console.log(`App listening on port ${port}!`));
 
-app.use(compression());
 
-app.use(express.static('public'));
 
 
 const api = {
@@ -77,6 +80,7 @@ const data = {
     }
 };
 
+app.listen(port, () => console.log(`App listening on port ${port}!`));
 
 
 
