@@ -1,8 +1,10 @@
 const express = require('express');
+const compression = require('compression');
 let ejs = require('ejs');
 const app = express();
 const port = 3000;
 const fetch = require('node-fetch');
+
 
 app.set('view engine', 'ejs');
 
@@ -48,11 +50,12 @@ app.get('/starships', async (req, res) => {
     });
 });
 
-
-
 app.listen(port, () => console.log(`App listening on port ${port}!`));
 
+app.use(compression());
+
 app.use(express.static('public'));
+
 
 const api = {
     // Set base URL for dynamic link
@@ -73,6 +76,7 @@ const data = {
         })
     }
 };
+
 
 
 
