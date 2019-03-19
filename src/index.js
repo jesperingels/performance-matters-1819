@@ -14,8 +14,6 @@ app.use(express.static('public'));
 app.use(express.static('dist'));
 
 
-
-
 app.get('/', function(req, res) {
     res.render('pages/index');
 });
