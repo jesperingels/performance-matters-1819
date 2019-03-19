@@ -6,13 +6,12 @@ const port = 3000;
 const fetch = require('node-fetch');
 
 
-
-
-app.set('view engine', 'ejs');
-
 app.use(compression());
 
 app.use(express.static('public'));
+
+app.set('view engine', 'ejs');
+
 
 app.get('/', function(req, res) {
     res.render('pages/index');
