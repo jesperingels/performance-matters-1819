@@ -4,7 +4,8 @@
   "description": "In dit vak gaan we de eerder bij de OBA gemaakte client side web applicatie ombouwen naar een server side gerenderde applicatie. Verder gaan we een reeks van optimalisaties doorvoeren om de performance van de applicatie te verbeteren. Uiteindelijk zorgen we ervoor dat de applicatie offline beschikbaar.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildcss": "node tasks/styles.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,13 @@
   "homepage": "https://github.com/jesperingels/performance-matters-1819#readme",
   "dependencies": {
     "compression": "^1.7.3",
+    "cssnano": "^4.1.10",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "gulp": "^4.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
     "node-fetch": "^2.3.0"
   }
 }

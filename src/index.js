@@ -5,12 +5,15 @@ const app = express();
 const port = 3000;
 const fetch = require('node-fetch');
 
+app.set('view engine', 'ejs');
 
 app.use(compression());
 
 app.use(express.static('public'));
 
-app.set('view engine', 'ejs');
+app.use(express.static('dist'));
+
+
 
 
 app.get('/', function(req, res) {
