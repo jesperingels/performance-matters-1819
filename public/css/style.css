@@ -11,34 +11,42 @@ article a, article a:hover {
     text-decoration: none;
 }
 
-.people {
-    background-image: url("/img/luke_skywalker.jpg");
-}
-
-.planets {
-    background-image: url("/img/mustafar.jpg");
-}
-
-.species {
-    background-image: url("/img/species.jpg");
-}
-
-.starships {
-    background-image: url("/img/millenium.png");
-}
-
 .cat {
     background-position: center;
     background-size: cover;
     height: 300px;
 }
 
-.cat div {
+.placeholder {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: gray;
+}
+
+.cat > div {
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 }
+
+    .cat img,
+    picture {
+        object-fit: cover;
+        width: auto;
+        position: absolute;
+        height: 100%;
+        left:-50px;
+        top:0;
+        z-index: 900;
+    }
+
+    .cat > div h3 {
+        z-index: 999;
+    }
 
 .loader {
     display: none;

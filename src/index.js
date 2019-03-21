@@ -9,6 +9,12 @@ app.set('view engine', 'ejs');
 
 app.use(compression());
 
+app.use((req, res, next) => {
+    res.setHeader('Cache-Control', 'max-age=' + 365 * 24 * 60 *
+        60);
+    next();
+});
+
 app.use(express.static('public'));
 
 app.use(express.static('dist'));
