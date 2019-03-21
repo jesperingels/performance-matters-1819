@@ -33,12 +33,12 @@ article a, article a:hover {
     height: 300px;
 }
 
-    .cat div {
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.cat div {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .loader {
     display: none;
@@ -52,7 +52,7 @@ article a, article a:hover {
     justify-content: center;
 }
 
-    .loader img {
-        height: 300px;
-        width: auto;
-    }
+.loader img {
+    height: 300px;
+    width: auto;
+}
