@@ -6,6 +6,10 @@ body {
     color: white;
 }
 
+.container {
+    overflow: hidden;
+}
+
 article a, article a:hover {
     color: white;
     text-decoration: none;
@@ -63,4 +67,14 @@ article a, article a:hover {
 .loader img {
     height: 300px;
     width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .cat img,
+    picture {
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        right: 0;
+    }
 }
