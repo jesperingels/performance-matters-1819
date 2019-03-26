@@ -2,7 +2,7 @@ const express = require('express');
 const compression = require('compression');
 let ejs = require('ejs');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const fetch = require('node-fetch');
 
 app.set('view engine', 'ejs');
@@ -86,7 +86,7 @@ const data = {
     }
 };
 
-app.listen(port, () => console.log(`App listening on port ${port}!`));
+app.listen(port, () => console.log('App listening on port: ' + port ));
 
 
 
