@@ -4,7 +4,7 @@
   "description": "In dit vak gaan we de eerder bij de OBA gemaakte client side web applicatie ombouwen naar een server side gerenderde applicatie. Verder gaan we een reeks van optimalisaties doorvoeren om de performance van de applicatie te verbeteren. Uiteindelijk zorgen we ervoor dat de applicatie offline beschikbaar.",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.js",
+    "start": "node src/index.js",
     "prestart": "npm run buildcss",
     "buildcss": "node tasks/styles.js",
     "postbuildcss": "node tasks/imgmin.js",
