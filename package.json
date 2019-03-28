@@ -7,8 +7,7 @@
     "start": "node src/index.js",
     "prestart": "npm run buildcss",
     "buildcss": "node tasks/styles.js",
-    "postbuildcss": "node tasks/imgmin.js",
-    "rev": "node tasks/revision-hash.js"
+    "postbuildcss": "node tasks/imgmin.js"
   },
   "repository": {
     "type": "git",
