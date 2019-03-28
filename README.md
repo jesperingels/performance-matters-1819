@@ -6,6 +6,8 @@ Voor dit vak heb ik de webapp die ik in het vorige blok bij Web Apps From Scratc
 __Niet geoptimaliseerde runtime op traag 3G netwerk__
 ![Non Optimized runtime](public/readme-img/Non-optimized.png)
 
+Zoals je kunt zien is de totale laadtijd <span style="color:red;">25 seconden.</span>
+
 __Wel geoptimaliseerde runtime op traag 3G netwerk, met cache disabled__
 ![Non Optimized runtime](public/readme-img/OptiNoCache.png)
 
@@ -32,4 +34,17 @@ Die code ziet er vervolgens zo uit:<br/>
        <source srcset="/img/m-luke_skywalker.jpg" media="(min-width: 768px)">
        <source srcset="/img/s-luke_skywalker.jpg">
        <img alt="Millenium Falcon" src="/img/luke_skywalker.jpg"/>
-</picture>```
+</picture>
+```
+
+
+
+
+
+
+
+
+
+
+
+
