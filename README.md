@@ -23,7 +23,7 @@ __Wel geoptimaliseerde runtime op traag 3G netwerk, met cache enabled__
 ### Image loading
 Door gebruik te maken van ``srcset=" "`` geef ik per viewport width aan welke image de browser moet tonen zodat hij op een klein scherm ook een kleinere image laat zien.
 Die code ziet er vervolgens zo uit:<br/>
-`` <picture>
+``` <picture>
        <source type="image/webp" srcset="/img/l-luke_skywalker.webp" media="(min-width: 992px)">
        <source type="image/webp" srcset="/img/m-luke_skywalker.webp" media="(min-width: 768px)">
        <source type="image/webp" srcset="/img/s-luke_skywalker.webp">
@@ -31,4 +31,4 @@ Die code ziet er vervolgens zo uit:<br/>
        <source srcset="/img/m-luke_skywalker.jpg" media="(min-width: 768px)">
        <source srcset="/img/s-luke_skywalker.jpg">
        <img alt="Millenium Falcon" src="/img/luke_skywalker.jpg"/>
-   </picture>``
+   </picture>```
