@@ -31,28 +31,30 @@ __Dependencies:__
     * gulp-rename
 
 ### Optimize runtime
-__Non optimized runtime on slow 3G network__
+##### Non optimized runtime on slow 3G network
 ![Non Optimized runtime](public/readme-img/Non-optimized.png)
 As you can see the total runtime of the app is 25 seconds.
 
-__Optimized runtime on slow 3G network, with cache disabled__
+##### Optimized runtime on slow 3G network, with cache *disabled*
 ![Non Optimized runtime](public/readme-img/OptiNoCache.png)
 
 For this optimisation I used the following features: 
 * g-zip compression
 * CSS minify
 
-__Wel geoptimaliseerde runtime op traag 3G netwerk, met cache enabled__
+##### Optimized runtime on slow 3G network, with cache *enabled*
 ![Non Optimized runtime](public/readme-img/OptiCache.png)
-Met deze optimalisaties is de laadtijd terug gebracht naar 9 seconden!
+With these optimisations the runtime for this app has been reduced to 9 seconds!
 
 ### Perceived performance
 ![Perceived performance](public/readme-img/Perceived1.png) ![Perceived performance](public/readme-img/Perceived2.png) ![Perceived performance](public/readme-img/Perceived3.png)
+When the HTML has been loaded there are grey placeholder elements on the position where the images are going to be loaded.
+This gives the user the sense that the page loads faster. 
 
 
 ### Image loading
-Door gebruik te maken van ``srcset=" "`` geef ik per viewport width aan welke image de browser moet tonen zodat hij op een klein scherm ook een kleinere image laat zien.
-Die code ziet er vervolgens zo uit:<br/>
+By using ``srcset=" "`` the browser will show a differently sized image based on the device's viewport width. So a small screen will load a smaller image.
+The code looks as follows:<br/>
 ``` 
 <picture>
        <source type="image/webp" srcset="/img/l-luke_skywalker.webp" media="(min-width: 992px)">
