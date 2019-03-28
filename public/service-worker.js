@@ -1,6 +1,7 @@
 var CACHE_NAME = 'swapi-cache-v1';
 var CACHE_URLS = [
     '/',
+    '/img/l-luke_skywalker.webp',
     '/css/dist/style.min.css',
     '/offline/offline.html'
 ];
@@ -27,17 +28,17 @@ self.addEventListener('fetch', function(event) {
             // Fall back to network
             return response || fetch(event.request);
         })
-        //     .catch(function(err) {
-        //     // If both fail, show a generic fallback:
-        //     return caches.open('swapi-cache-v1')
-        //         .then(function (cache) {
-        //             return 'we\'re offline'
-        //             // return cache.match('/offline/offline.html')
-        //         })
-        //     // However, in reality you'd have many different
-        //     // fallbacks, depending on URL & headers.
-        //     // Eg, a fallback silhouette image for avatars.
-        // })
+            .catch(function(err) {
+            // If both fail, show a generic fallback:
+            return caches.open('swapi-cache-v1')
+                .then(function (cache) {
+                    // return 'we\'re offline'
+                    return cache.match('/offline/offline.html')
+                })
+            // However, in reality you'd have many different
+            // fallbacks, depending on URL & headers.
+            // Eg, a fallback silhouette image for avatars.
+        })
     );
 });
 
