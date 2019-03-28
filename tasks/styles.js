@@ -7,6 +7,6 @@ gulp.src('public/css/*.css')
     .pipe(concat('all.css'))
     .pipe(cssnano())
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('public/css/dist'));
 
 console.log('Styles minified!');

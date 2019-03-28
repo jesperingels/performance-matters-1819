@@ -16,4 +16,7 @@ Voor deze optimalisatie heb ik gebruik gemaakt van:
 __Wel geoptimaliseerde runtime op traag 3G netwerk, met cache enabled__
 ![Non Optimized runtime](public/readme-img/OptiCache.png)
 
+### Perceived performance
+
+
 

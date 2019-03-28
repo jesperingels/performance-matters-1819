@@ -1,3 +1,13 @@
 <script src="/js/app.js"></script>
+<script>
+    if("serviceWorker" in navigator){
+        window.addEventListener("load",()=>{
+            navigator.serviceWorker.register("js/service-worker.js").then(regis=>{
+                console.log("SW registering")
+                return regis.update()
+            }).catch(err=> console.log(err))
+        })
+    }
+</script>
 </body>
 </html>
