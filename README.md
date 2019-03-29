@@ -13,7 +13,7 @@ $ npm start
  1. All CSS is minified and stored in one file: style.min.css
  2. All images are compressed and for each .jpg and .png file a .webp file is created.
  
- After these tasks the app will run on: localhost:3000
+ After these tasks have finished the app will run on: localhost:3000
  
 #### App info
 ExpressJS is used to run the app server-side. <br/>
@@ -37,6 +37,8 @@ As you can see the total runtime of the app is 25 seconds.
 
 ##### Optimized runtime on slow 3G network, with cache *disabled*
 ![Non Optimized runtime](public/readme-img/OptiNoCache.png)
+With these optimisations the runtime for this app has been reduced to 9 seconds!
+
 
 For this optimisation I used the following features: 
 * g-zip compression
@@ -44,7 +46,7 @@ For this optimisation I used the following features:
 
 ##### Optimized runtime on slow 3G network, with cache *enabled*
 ![Non Optimized runtime](public/readme-img/OptiCache.png)
-With these optimisations the runtime for this app has been reduced to 9 seconds!
+With these optimisations the runtime for this app has been reduced to 2 seconds!
 
 ### Perceived performance
 ![Perceived performance](public/readme-img/Perceived1.png) ![Perceived performance](public/readme-img/Perceived2.png) ![Perceived performance](public/readme-img/Perceived3.png)
@@ -66,6 +68,8 @@ The code looks as follows:<br/>
        <img alt="Millenium Falcon" src="/img/luke_skywalker.jpg"/>
 </picture>
 ```
+
+
 
 
 
